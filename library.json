@@ -1,0 +1,24 @@
+{
+    "name": "BME280_I2C",
+    "version": "1.0.0",
+    "keywords": "bme280, i2c",
+    "description": "BME280 library for I2C interface.",
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/ks-tec/BME280_I2C"
+    },
+    "authors":
+    [
+      {
+          "name": "ks-tec",
+          "email": "..@..",
+          "url": "https://github.com/ks-tec"
+      }
+    ],
+    "frameworks": "arduino",
+    "platforms": [
+      "espressif32"
+    ]
+  }
+  
