@@ -13,8 +13,15 @@ BME280 is a multi-function sensor from BOSCH that can measure temperature, humid
 BME280 は BOSCH社製が提供する多機能センサーで 温度・湿度・気圧 を計測できるセンサーです。  
   
 ## Change log
+(1.2.0)
+Added calculate altitude function.  
+It can be obtained with data.altitude, and just needs to call read() function as before.  
+  
+標高を計算する関数 calculateAltitude() を追加しました。  
+data.altitude で取得でき 従来どおり read() 関数の呼び出しのみで済みます。  
+  
 (1.1.0)  
-Changed specifications of begin() function.  
+Changed specifications of the begin() function.  
 Changed to set BME280 address and connected pins using constructor or setAddress() function.  
   
 BME280_I2C クラスの begin() 関数の仕様を変更しました。  
