@@ -67,6 +67,19 @@ Arduino IDE に 以下のライブラリを導入してください。
   
 - Wire
   
+## TODO
+- Getting the sea level pressure by hour  
+Now defined constant value in header file is 1 atmospheric pressure. (1 atmospheric pressure = 1013.25 hPa)  
+    ```
+    Getting the sea level pressure by hour, it is possible to calculate more than right altitude.
+    Therefore, In the future, add new calculate function to BME280_I2C class or extend existing function.
+    (Functions to be added or extended will receive sea level pressure as a parameter.)
+
+    １時間ごとの海面気圧を取得することで より正確な高度を算出できます。
+    そのため、BME280_I2C クラスに新しい計算関数を追加するか、既存の関数を拡張します。
+    ( その関数は 海面気圧を引数に受け取ることになるでしょう。 )
+    ```
+
 ## Refered Site
 http://trac.switch-science.com/wiki/BME280  
 Original License is Unkown  
