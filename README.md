@@ -35,7 +35,7 @@ BME280_I2C bme280;
 bme280.setAddress(BME280_ADDRESS, BME280_I2C_SDA, BME280_I2C_SCL);
 
 // and then begin the sensor
-bme280.begin(standby_duration, filter, spi_mode, temp_oversampling, pres_oversampling, humi_oversampling, exec_mode);
+bme280.begin(standby_time, filter, spi_mode, temp_oversampling, pres_oversampling, humi_oversampling, exec_mode);
 
 // read values from BME280 and store calibrated values in the library
 bme280.read();
