@@ -21,11 +21,11 @@ void setup()
   Serial.println(F("Hardware serial initialized."));
   delay(100);
 
+  // set address and pins
+  bme280.setAddress(BME280_ADDRESS, BME280_I2C_SDA, BME280_I2C_SCL);
+
   // initialize BME280
   bool isStatus = bme280.begin(
-    BME280_ADDRESS,
-    BME280_I2C_SDA,
-    BME280_I2C_SCL,
     bme280.BME280_STANDBY_0_5,
     bme280.BME280_FILTER_16,
     bme280.BME280_SPI3_DISABLE,

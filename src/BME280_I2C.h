@@ -1,6 +1,6 @@
 /*******************************************************************************
  * BME280_I2C.h
- * ver. 1.0.0
+ * ver. 1.1.0
  * 
  * This library assume for use with Arduino core for ESP32.
  * BME280 is a multi-function sensor from BOSCH that can measure temperature, 
@@ -128,15 +128,14 @@ class BME280_I2C
     // constructors
     //==========================================================
     BME280_I2C();
+    BME280_I2C(byte addr, byte sda, byte scl);
     ~BME280_I2C();
 
     //==========================================================
     // methods (public)
     //==========================================================
+    void setAddress(byte addr, byte sda, byte scl);
     bool begin(
-      byte addr,
-      byte ada,
-      byte scl,
       BME280Standby standby, 
       BME280Filter filter,
       BME280SpiMode spi3mode,
@@ -150,28 +149,28 @@ class BME280_I2C
     //==========================================================
     // variables (private)
     //==========================================================
-    byte address, sda, scl;
-    uint8_t conf, ctrl_meas, ctrl_hum;
-    uint16_t dig_T1;
-     int16_t dig_T2;
-     int16_t dig_T3;
-    uint16_t dig_P1;
-     int16_t dig_P2;
-     int16_t dig_P3;
-     int16_t dig_P4;
-     int16_t dig_P5;
-     int16_t dig_P6;
-     int16_t dig_P7;
-     int16_t dig_P8;
-     int16_t dig_P9;
-     int8_t  dig_H1;
-     int16_t dig_H2;
-     int8_t  dig_H3;
-     int16_t dig_H4;
-     int16_t dig_H5;
-     int8_t  dig_H6;
-    signed long int t_fine;
-    unsigned long int temp_raw, press_raw, hum_raw;
+    byte _address, _sda, _scl;
+    uint8_t _conf, _ctrl_meas, _ctrl_humi;
+    uint16_t _dig_T1;
+     int16_t _dig_T2;
+     int16_t _dig_T3;
+    uint16_t _dig_P1;
+     int16_t _dig_P2;
+     int16_t _dig_P3;
+     int16_t _dig_P4;
+     int16_t _dig_P5;
+     int16_t _dig_P6;
+     int16_t _dig_P7;
+     int16_t _dig_P8;
+     int16_t _dig_P9;
+     int8_t  _dig_H1;
+     int16_t _dig_H2;
+     int8_t  _dig_H3;
+     int16_t _dig_H4;
+     int16_t _dig_H5;
+     int8_t  _dig_H6;
+    signed long int _t_fine;
+    unsigned long int _temp_raw, _pres_raw, _humi_raw;
 
     //==========================================================
     // methods (private)

@@ -13,6 +13,13 @@ BME280 is a multi-function sensor from BOSCH that can measure temperature, humid
 BME280 は BOSCH社製が提供する多機能センサーで 温度・湿度・気圧 を計測できるセンサーです。  
   
 ## Change log
+(1.1.0)  
+Changed specifications of begin() function.  
+Changed to set BME280 address and connected pins using constructor or setAddress() function.  
+  
+BME280_I2C クラスの begin() 関数の仕様を変更しました。  
+BME280 のアドレスおよび接続ピンの設定は コンストラクタ または setAddress() 関数を使用するように変更しました。  
+  
 (1.0.0)  
 Using this library, BME280 can be easying used with I2C interface of ESP32.  
 For use this library, install bellow libraries to Arduino IDE.  
