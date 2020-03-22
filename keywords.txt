@@ -1,5 +1,9 @@
 #######################################
-# Datatypes (KEYWORD1)
+# Syntax Coloring Map for library     #
+#######################################
+
+#######################################
+# Class / Datatypes (KEYWORD1)
 #######################################
 BME280_I2C	KEYWORD1
 BME280Register	KEYWORD1

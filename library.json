@@ -1,8 +1,8 @@
 {
     "name": "BME280_I2C",
-    "version": "1.0.0",
-    "keywords": "bme280, i2c",
-    "description": "BME280 library for I2C interface.",
+    "version": "1.2.0",
+    "keywords": "sensor, i2c, bme280, temperature, humidity, pressure, altitude",
+    "description": "BME280 library for I2C interface. And using this library, BME280 can be easying used with I2C interface of ESP32.",
     "repository":
     {
       "type": "git",
