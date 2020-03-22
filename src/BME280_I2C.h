@@ -34,9 +34,12 @@
 
 #include "Wire.h"
 
-//#define BME280_ADDRESS              (0x77)    // 1110111 (if SA0 connected to VDDIO)
-#define BME280_ADDRESS                (0x76)    // 1110110 (if SA0 connected to GND)
-#define BME280_ID                     (0x60)
+//#define BME280_ADDRESS              0x77      // 1110111 (if SA0 connected to VDDIO)
+#define BME280_ADDRESS                0x76      // 1110110 (if SA0 connected to GND)
+#define BME280_ID                     0x60
+
+// define Sea Level Pressure
+#define SEALEVELPRESSURE_HPA          1013.25   // default value (change if needed)
 
 class BME280_I2C
 {
@@ -117,6 +120,7 @@ class BME280_I2C
       double temperature;
       double pressure;
       double humidity;
+      double altitude;
     } BME280Data;
 
     //==========================================================
@@ -180,6 +184,7 @@ class BME280_I2C
     signed long calibratedTemperature(signed long int rawT);
     unsigned long calibratedPressure(signed long int rawP);
     unsigned long calibratedHumidity(signed long int rawH);
+    double calculateAltitude(double seaLevelPressure, double pressure);
     void write8(BME280Register reg, byte value);
     byte read8(BME280Register reg);
 };

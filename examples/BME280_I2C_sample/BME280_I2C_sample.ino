@@ -58,16 +58,18 @@ void readBme280()
   bme280.read();
 
   // format the read values
-  char temp_c[12], humi_c[12], pres_c[12];
+  char temp_c[12], humi_c[12], pres_c[12], altd_c[12];
   sprintf(temp_c, "%2.2lf", bme280.data.temperature);
   sprintf(humi_c, "%2.2lf", bme280.data.humidity);
   sprintf(pres_c, "%4.2lf", bme280.data.pressure);
+  sprintf(altd_c, "%4.2lf", bme280.data.altitude);
 
   // output values to serial console
   Serial.println("-----------------------");
   Serial.print("Temperature: "); Serial.print(temp_c); Serial.println(" ℃");
   Serial.print("Humidity: ");    Serial.print(humi_c); Serial.println(" %");
   Serial.print("Pressure: ");    Serial.print(pres_c); Serial.println(" hPa");
+  Serial.print("Altitude: ");    Serial.print(altd_c); Serial.println(" m");
   Serial.println("-----------------------");
   Serial.flush();
 }

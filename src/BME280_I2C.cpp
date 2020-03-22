@@ -103,17 +103,18 @@ bool BME280_I2C::begin(
 void BME280_I2C::read()
 {
   signed long temp_cal;
-  unsigned long press_cal, hum_cal;
+  unsigned long pres_cal, humi_cal;
 
   readRawData();
 
-  temp_cal  = calibratedTemperature(_temp_raw);
-  press_cal = calibratedPressure(_pres_raw);
-  hum_cal   = calibratedHumidity(_humi_raw);
+  temp_cal = calibratedTemperature(_temp_raw);
+  pres_cal = calibratedPressure(_pres_raw);
+  humi_cal = calibratedHumidity(_humi_raw);
 
   data.temperature = (double)temp_cal / 100.0;
-  data.pressure = (double)press_cal / 100.0;
-  data.humidity = (double)hum_cal / 1024.0;
+  data.pressure = (double)pres_cal / 100.0;
+  data.humidity = (double)humi_cal / 1024.0;
+  data.altitude = calculateAltitude(SEALEVELPRESSURE_HPA, data.pressure);
 }
 
 //==========================================================
@@ -264,6 +265,17 @@ unsigned long BME280_I2C::calibratedHumidity(signed long int adc_H)
   H = (unsigned long int)(v_x1 >> 12);
 
   return H;
+}
+
+/**
+ * calculateAltitude
+ * Calculate altitude from atmospheric pressure and sea level pressure.
+ */
+double BME280_I2C::calculateAltitude(double seaLevelPressure, double pressure)
+{
+  double A = 44330.0 * (1.0 - pow(pressure / seaLevelPressure, (1.0 / 5.255)));
+
+  return A;
 }
 
 /**
