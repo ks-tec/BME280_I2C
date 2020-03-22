@@ -12,7 +12,7 @@ BME280 is a multi-function sensor from BOSCH that can measure temperature, humid
 このライブラリは "Arduino core for ESP32" 上での使用を想定しています。  
 BME280 は BOSCH社製が提供する多機能センサーで 温度・湿度・気圧 を計測できるセンサーです。  
   
-<img src="./resources/GY-BME280.png" title="GY-BME280">
+<img src="./resources/GY-BME280_001.png" title="GY-BME280">
   
 ## Usage
 This library support only BME280 connected with I2C interface.  
