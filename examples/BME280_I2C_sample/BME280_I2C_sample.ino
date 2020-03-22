@@ -14,6 +14,8 @@
 
 // define the instance of BME280_I2C class
 BME280_I2C bme280;
+// also possible to omit the subsequent address setting
+// BME280_I2C bme280(BME280_ADDRESS, BME280_I2C_SDA, BME280_I2C_SCL);
 
 void setup()
 {
