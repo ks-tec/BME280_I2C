@@ -6,11 +6,11 @@ I2C インターフェース用 BME280 ライブラリ
 このライブラリを使用することで ESP32 の I2C インターフェース接続で BME280 を簡単に使用できます。  
   
 ## Overview
-This library assume for use with 'Arduino core for ESP32'.  
-BME280 is a multi-function sensor from BOSCH that can measure temperature, humidity and pressure.  
+This library assume for use with 'PlatformIO' or 'Arduino core for ESP32'.  
+BME280 is a multi-function sensor from BOSCH that can measure temperature, humidity and atmospheric pressure.  
   
-このライブラリは "Arduino core for ESP32" 上での使用を想定しています。  
-BME280 は BOSCH社製が提供する多機能センサーで 温度・湿度・気圧 を計測できるセンサーです。  
+このライブラリは "PlatformIO" または "Arduino core for ESP32" での使用を想定しています。  
+BME280 は BOSCH社製が提供する多機能センサーで 温度・湿度・大気圧 を計測できるマルチセンサーです。  
   
 <img src="./resources/GY-BME280_001.png" title="GY-BME280">
   
