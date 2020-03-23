@@ -61,6 +61,9 @@ void loop()
 
 void readBme280()
 {
+  // set sea-level pressure
+  bme280.setSeaLevelPressure(1010);
+
   // read values from BME280 and store calibrated values in the library
   // and the calibrated values is storeed to BME280.data in the library.
   // the stored data is temperature, atmospheric pressure, humidity and altitude.

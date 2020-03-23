@@ -1,6 +1,6 @@
 /*******************************************************************************
  * BME280_I2C.h
- * ver. 1.2.0
+ * ver. 1.3.0
  * 
  * This library assume for use with Arduino core for ESP32.
  * BME280 is a multi-function sensor from BOSCH that can measure temperature, 
@@ -139,6 +139,7 @@ class BME280_I2C
     // methods (public)
     //==========================================================
     void setAddress(byte addr, byte sda, byte scl);
+    void setSeaLevelPressure(double pressure);
     bool begin(
       BME280Standby standby, 
       BME280Filter filter,
@@ -175,6 +176,7 @@ class BME280_I2C
      int8_t  _dig_H6;
     signed long int _t_fine;
     unsigned long int _temp_raw, _pres_raw, _humi_raw;
+    double _seaLevelPressure;
 
     //==========================================================
     // methods (private)
@@ -184,6 +186,7 @@ class BME280_I2C
     signed long calibratedTemperature(signed long int rawT);
     unsigned long calibratedPressure(signed long int rawP);
     unsigned long calibratedHumidity(signed long int rawH);
+    double calculateAltitude(double pressure);
     double calculateAltitude(double seaLevelPressure, double pressure);
     void write8(BME280Register reg, byte value);
     byte read8(BME280Register reg);

@@ -1,6 +1,6 @@
 /*******************************************************************************
  * BME280_I2C.h
- * ver. 1.2.0
+ * ver. 1.3.0
  * 
  * This library assume for use with Arduino core for ESP32.
  * BME280 is a multi-function sensor from BOSCH that can measure temperature, 
@@ -32,14 +32,18 @@
  * Constructor
  * Create an instance of this class.
  */
-BME280_I2C::BME280_I2C() {}
+BME280_I2C::BME280_I2C()
+  : BME280_I2C(-1, -1, -1) {}
 
 /**
  * Constructor
  * Create an instance of this class.
  */
 BME280_I2C::BME280_I2C(byte addr, byte sda, byte scl)
-  : _address(addr), _sda(sda), _scl(scl) {}
+  : _address(addr), _sda(sda), _scl(scl)
+{
+  setSeaLevelPressure(SEALEVELPRESSURE_HPA);
+}
 
 /**
  * Destructor
@@ -60,6 +64,15 @@ void BME280_I2C::setAddress(byte addr, byte sda, byte scl)
   _address = addr;
   _sda = sda;
   _scl = scl;
+}
+
+/**
+ * setSeaLevelPressure
+ * Set Sea-Level Pressure.
+ */
+void BME280_I2C::setSeaLevelPressure(double pressure)
+{
+  _seaLevelPressure = pressure;
 }
 
 /**
@@ -114,7 +127,7 @@ void BME280_I2C::read()
   data.temperature = (double)temp_cal / 100.0;
   data.pressure = (double)pres_cal / 100.0;
   data.humidity = (double)humi_cal / 1024.0;
-  data.altitude = calculateAltitude(SEALEVELPRESSURE_HPA, data.pressure);
+  data.altitude = calculateAltitude(data.pressure);
 }
 
 //==========================================================
@@ -269,7 +282,17 @@ unsigned long BME280_I2C::calibratedHumidity(signed long int adc_H)
 
 /**
  * calculateAltitude
- * Calculate altitude from atmospheric pressure and sea level pressure.
+ * Calculate altitude from atmospheric pressure.
+ * Sea-level pressure used is the inner value, and that value can set by calling setSeaLevelPressure().
+ */
+double BME280_I2C::calculateAltitude(double pressure)
+{
+  calculateAltitude(_seaLevelPressure, pressure);
+}
+
+/**
+ * calculateAltitude
+ * Calculate altitude from atmospheric pressure and sea-level pressure.
  */
 double BME280_I2C::calculateAltitude(double seaLevelPressure, double pressure)
 {
