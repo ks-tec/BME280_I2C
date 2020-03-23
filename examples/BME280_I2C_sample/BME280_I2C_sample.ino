@@ -14,6 +14,7 @@
 
 // define the instance of BME280_I2C class
 BME280_I2C bme280;
+
 // also possible to omit the subsequent address setting
 // BME280_I2C bme280(BME280_ADDRESS, BME280_I2C_SDA, BME280_I2C_SCL);
 
@@ -23,10 +24,14 @@ void setup()
   Serial.println(F("Hardware serial initialized."));
   delay(100);
 
-  // set address and pins
+  // set address and connected pins
+  // since the address of BME280 is defined in the header file.
+  // it changes according to the setting of BME280.
   bme280.setAddress(BME280_ADDRESS, BME280_I2C_SDA, BME280_I2C_SCL);
 
   // initialize BME280
+  // each parameter uses the enum values ​​defined in the header file.
+  // typically, SPI mode uses BME280_SPI3_DISABLE because it is for I2C.
   bool isStatus = bme280.begin(
     bme280.BME280_STANDBY_0_5,
     bme280.BME280_FILTER_16,
@@ -49,7 +54,7 @@ void setup()
 
 void loop()
 {
-  // read data from BME280
+  // read values from BME280.
   readBme280();
   delay(3000);
 }
@@ -57,16 +62,18 @@ void loop()
 void readBme280()
 {
   // read values from BME280 and store calibrated values in the library
+  // and the calibrated values is storeed to BME280.data in the library.
+  // the stored data is temperature, atmospheric pressure, humidity and altitude.
   bme280.read();
 
-  // format the read values
+  // format the stored values
   char temp_c[12], humi_c[12], pres_c[12], altd_c[12];
   sprintf(temp_c, "%2.2lf", bme280.data.temperature);
   sprintf(humi_c, "%2.2lf", bme280.data.humidity);
   sprintf(pres_c, "%4.2lf", bme280.data.pressure);
   sprintf(altd_c, "%4.2lf", bme280.data.altitude);
 
-  // output values to serial console
+  // output formatted values to serial console
   Serial.println("-----------------------");
   Serial.print("Temperature: "); Serial.print(temp_c); Serial.println(" ℃");
   Serial.print("Humidity: ");    Serial.print(humi_c); Serial.println(" %");
