@@ -39,7 +39,7 @@
 #define BME280_ID                     0x60
 
 // define Sea Level Pressure
-#define SEALEVELPRESSURE_HPA          1013.25   // default value (change if needed)
+#define SEALEVELPRESSURE_HPA          1013    // default value (change if needed)
 
 class BME280_I2C
 {
