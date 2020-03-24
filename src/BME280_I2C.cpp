@@ -287,7 +287,7 @@ unsigned long BME280_I2C::calibratedHumidity(signed long int adc_H)
  */
 double BME280_I2C::calculateAltitude(double pressure)
 {
-  calculateAltitude(_seaLevelPressure, pressure);
+  return calculateAltitude(_seaLevelPressure, pressure);
 }
 
 /**
