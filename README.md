@@ -81,20 +81,14 @@ Download and Install of this library is supported by GitHub and PlatformIO.
     https://platformio.org/lib/show/7143/BME280_I2C/installation
   
 ## TODO Tasks
-- [x] Getting the sea level pressure by hour  
+- [x] Getting the sea-level pressure by hour  
 ~~Now defined constant value in header file is 1 atmospheric pressure. (1 atmospheric pressure = 1013.25 hPa)~~  
-    
-        Getting the sea level pressure by hour, it is possible to calculate more than right altitude.  
-        ~~Therefore, In the future, add new calculate function to BME280_I2C class or extend existing function.  
-        The functions to be added or extended will receive sea level pressure as a parameter.~~  
+  
+    The function was added at ver.1.3.0, and fixed bug at ver.1.3.1 .  
+  
+        Getting and setting the sea-level pressures every hour allows for calculating more right altitude.  
 
-        １時間ごとの海面気圧を取得することで より正確な高度を算出できます。  
-        ~~そのため、BME280_I2C クラスに新しい計算関数を追加するか、既存の関数を拡張します。
-        その関数は 海面気圧を引数に受け取ることになるでしょう。~~
-  
-        The function was added at ver.1.3.0, and fixed bug at ver.1.3.1 .
-  
-        海面気圧を設定する関数が ver.1.3.0 で追加され、ver1.3.1 で不具合が修正されました。
+        １時間ごとに海面気圧を取得および設定すると、より適切な高度を計算できます。  
   
 ## Refered Site
 http://trac.switch-science.com/wiki/BME280  
