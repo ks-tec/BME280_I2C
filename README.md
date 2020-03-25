@@ -91,11 +91,10 @@ Download and Install of this library is supported by GitHub and PlatformIO.
     １時間ごとの海面気圧を取得することで より正確な高度を算出できます。
     そのため、BME280_I2C クラスに新しい計算関数を追加するか、既存の関数を拡張します。
     ( その関数は 海面気圧を引数に受け取ることになるでしょう。 )
-
+    ```
     :arrow_right: The function was added at ver.1.3.0, and fixed bug at ver.1.3.1 .
 
-        海面気圧を設定する関数が ver.1.3.0 で追加され、ver1.3.1 で不具合が修正されました。
-    ```
+       海面気圧を設定する関数が ver.1.3.0 で追加され、ver1.3.1 で不具合が修正されました。
   
 ## Refered Site
 http://trac.switch-science.com/wiki/BME280  
