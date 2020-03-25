@@ -81,9 +81,10 @@ Download and Install of this library is supported by GitHub and PlatformIO.
     https://platformio.org/lib/show/7143/BME280_I2C/installation
   
 ## TODO Tasks
-- [x] Getting the sea-level pressure by hour  
+- [x] Getting the sea-level pressure every hour  
 ~~Now defined constant value in header file is 1 atmospheric pressure. (1 atmospheric pressure = 1013.25 hPa)~~  
 The function was added at ver.1.3.0, and fixed bug at ver.1.3.1 .  
+Hourly data acquisition is beyond the scope of the library, so just set the value of the sea-level pressure.  
   
         Getting and setting the sea-level pressures every hour allows for calculating more right altitude.  
 
