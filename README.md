@@ -71,8 +71,9 @@ Download and Install of this library is supported by GitHub and PlatformIO.
 - GitHub  
     https://github.com/ks-tec/BME280_I2C
   
-    How to installation, it is "Clone or Download" from the following page.  
-    https://github.com/ks-tec/BME280_I2C
+    How to installation, it is "Clone or Download" from the up-forward page.  
+    Or download zip archive file following link, and you able to use.  
+    https://github.com/ks-tec/BME280_I2C/archive/master.zip
   
 - PlatformIO  
   https://platformio.org/lib/show/7143/BME280_I2C
@@ -91,16 +92,17 @@ Getting hourly data is beyond the scope of the library, so set the value of sea-
         １時間ごとに海面気圧を取得および設定すると、より適切な高度を計算できます。  
   
 ## Refered Site
+- BME280 – スイッチサイエンス  
 http://trac.switch-science.com/wiki/BME280  
 Original License is Unkown  
   
-adafruit/Adafruit_BME280_Library: Arduino Library for BME280 sensors  
+- adafruit/Adafruit_BME280_Library: Arduino Library for BME280 sensors  
 https://github.com/adafruit/Adafruit_BME280_Library  
   
-BME280温湿度・気圧センサーの動作確認  
+- BME280温湿度・気圧センサーの動作確認  
 https://kazz12211.wordpress.com/2016/03/10/bme280%e6%b8%a9%e6%b9%bf%e5%ba%a6%e3%83%bb%e6%b0%97%e5%9c%a7%e3%82%bb%e3%83%b3%e3%82%b5%e3%83%bc%e3%81%ae%e5%8b%95%e4%bd%9c%e7%a2%ba%e8%aa%8d/  
   
-BME280 とesp32で温度・湿度・気圧を測定する  
+- BME280 とesp32で温度・湿度・気圧を測定する  
 https://raspberry-pi.nomad-life.net/1928977/memo/esp32%e3%81%a7%e6%b8%a9%e5%ba%a6%e3%83%bb%e6%b9%bf%e5%ba%a6%e3%83%bb%e6%b0%97%e5%9c%a7%e3%82%92%e8%a8%88%e6%b8%ac%e3%81%99%e3%82%8b  
   
 ## Change log
