@@ -2,7 +2,7 @@
 BME280 library for I2C interface.  
 Using this library, BME280 can be easying used with I2C interface of ESP32.  
   
-I2C インターフェース用 BME280 ライブラリ  
+I2C インターフェース用 BME280 ライブラリです。  
 このライブラリを使用することで ESP32 の I2C インターフェース接続で BME280 を簡単に使用できます。  
   
 ## Overview
