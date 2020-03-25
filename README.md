@@ -72,7 +72,7 @@ Download and Install of this library is supported by GitHub and PlatformIO.
     https://github.com/ks-tec/BME280_I2C
   
     How to installation, it is "Clone or Download" from the up-forward page.  
-    Or download zip archive file following link, and you able to use.  
+    Or download zip archive file following link, and you are able to use this library.  
     https://github.com/ks-tec/BME280_I2C/archive/master.zip
   
 - PlatformIO  
