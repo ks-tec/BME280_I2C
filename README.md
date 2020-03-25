@@ -27,12 +27,18 @@ For use this library, install bellow libraries to your development environment.
   
 - Wire  
   
+  ```
+  "Wire.h" is used inside "BME280_I2C.h".
+
+  "Wire.h" は "BME280_I2C.h" の内部で使用されます。
+  ```
+
 ## Example
-as follows, the usage outline of this library is.  
+As follows, an example of how to use BME280_I2C.
+  
+以下に、BME280_I2C の使い方を例示します。  
 
-以下に、このライブラリの使い方を示します。  
-
-### I2C with BME280_I2C.h ( BME280_I2C.h include Wire.h )
+### How to use BME280_I2C
 ```C++
 #include "BME280_I2C.h"
 
@@ -71,14 +77,13 @@ Download and Install of this library is supported by GitHub and PlatformIO.
 - GitHub  
     https://github.com/ks-tec/BME280_I2C
   
-    How to installation, it is "Clone or Download" from the up-forward page.  
-    Or download zip archive file following link, and you are able to use this library.  
+    How to installation, it is download zip archive file from following link.  
     https://github.com/ks-tec/BME280_I2C/archive/master.zip
   
 - PlatformIO  
   https://platformio.org/lib/show/7143/BME280_I2C
 
-    How to installation, it is writen in the following page.  
+    How to installation, it is writen in the following link.  
     https://platformio.org/lib/show/7143/BME280_I2C/installation
   
 ## TODO Tasks
