@@ -83,8 +83,7 @@ Download and Install of this library is supported by GitHub and PlatformIO.
 ## TODO Tasks
 - [x] Getting the sea-level pressure by hour  
 ~~Now defined constant value in header file is 1 atmospheric pressure. (1 atmospheric pressure = 1013.25 hPa)~~  
-  
-    The function was added at ver.1.3.0, and fixed bug at ver.1.3.1 .  
+The function was added at ver.1.3.0, and fixed bug at ver.1.3.1 .  
   
         Getting and setting the sea-level pressures every hour allows for calculating more right altitude.  
 
