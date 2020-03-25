@@ -34,9 +34,9 @@ For use this library, install bellow libraries to your development environment.
   ```
 
 ## Example
-As follows, an example of how to use BME280_I2C.
+As follows, an example of how to use this library.
   
-以下に、BME280_I2C の使い方を例示します。  
+以下に、使い方を例示します。  
 
 ### How to use BME280_I2C
 ```C++
@@ -75,7 +75,7 @@ Download and Install of this library is supported by GitHub and PlatformIO.
 このライブラリのダウンロードおよびインストールは GitHub と PlatformIO でサポートされています。  
   
 - GitHub  
-    https://github.com/ks-tec/BME280_I2C
+  https://github.com/ks-tec/BME280_I2C
   
     How to installation, it is download zip archive file from following link.  
     https://github.com/ks-tec/BME280_I2C/archive/master.zip
@@ -92,9 +92,11 @@ Download and Install of this library is supported by GitHub and PlatformIO.
 The function was added at ver.1.3.0, and fixed bug at ver.1.3.1 .  
 Getting hourly data is beyond the scope of the library, so set the value of sea-level pressure.  
   
-        Getting and setting the sea-level pressures every hour allows for calculating more right altitude.  
-
-        １時間ごとに海面気圧を取得および設定すると、より適切な高度を計算できます。  
+  ```
+  Getting and setting the sea-level pressures timely (ex. every hour), allows for calculating more right altitude.
+  
+  適時 (例：１時間ごと）に海面気圧を取得および設定することで、より適切な高度を計算できます。
+  ```
   
 ## Refered Site
 - BME280 – スイッチサイエンス  
