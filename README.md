@@ -40,7 +40,7 @@ As follows, an example of how to use this library.
 
 ### How to use BME280_I2C
 ```C++
-#include "BME280_I2C.h"
+#include <BME280_I2C.h>
 
 // define the wiring settings for I2C interface connection.
 #define BME280_I2C_SCL    26
