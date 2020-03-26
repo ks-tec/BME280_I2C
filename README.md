@@ -38,7 +38,7 @@ As follows, an example of how to use this library.
   
 以下に、使い方を例示します。  
   
-### **How to use BME280_I2C on PlatformIO IDE VScode plugin**
+### **Preparing to use BME280_I2C on PlatformIO IDE VScode plugin**
 Add lib_deps section if it does not exist.  
 Or append library to use if lib_deps section exists.  
   
@@ -51,7 +51,7 @@ framework = arduino
 lib_deps = BME280_I2C
 ```
 
-### **How to use BME280_I2C on Arduino IDE**
+### **Preparing to use BME280_I2C on Arduino IDE**
 Get zip archived file from GitHub Repository.  
 And install to Arduino IDE from following menu block.  
 ```
