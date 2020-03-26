@@ -48,7 +48,7 @@ Or append library to use if lib_deps section exists.
 platform = espressif32
 board = lolin32
 framework = arduino
-lib_deps = BME280_I2C
+lib_deps = Wire, BME280_I2C
 ```
 
 ### **Preparing to use BME280_I2C on Arduino IDE**
