@@ -37,10 +37,32 @@ For use this library, install bellow libraries to your development environment.
 As follows, an example of how to use this library.
   
 以下に、使い方を例示します。  
+  
+### **How to use BME280_I2C on PlatformIO IDE VScode plugin**
+Add lib_deps section if it does not exist.  
+Or append library to use if lib_deps section exists.  
+  
+##### platform.ini
+```ini
+[env:lolin32]
+platform = espressif32
+board = lolin32
+framework = arduino
+lib_deps = BME280_I2C
+```
 
-### How to use BME280_I2C
+### **How to use BME280_I2C on Arduino IDE**
+Get zip archived file from GitHub Repository.  
+And install to Arduino IDE from following menu block.  
+```
+[Sketch] --> [Include library] --> [Add .ZIP Library] --> Choose BME280_I2C-master.zip  
+```
+### **How to use BME280_I2C in your code**
+Write your code like following.  
+  
+#### your_code.ino
 ```C++
-#include "BME280_I2C.h"
+#include <BME280_I2C.h>
 
 // define the wiring settings for I2C interface connection.
 #define BME280_I2C_SCL    26
@@ -77,7 +99,7 @@ Download and Install of this library is supported by GitHub and PlatformIO.
 - GitHub  
   https://github.com/ks-tec/BME280_I2C
   
-    How to installation, it is download zip archive file from following link.  
+    How to installation, it is download zip archived file from following link.  
     And import the file to your environment.  
     https://github.com/ks-tec/BME280_I2C/archive/master.zip
   
