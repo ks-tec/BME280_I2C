@@ -1,6 +1,6 @@
 /*******************************************************************************
- * BME280_I2C.h
- * ver. 1.4.0
+ * BME280_I2C.cpp
+ * ver. 1.3.2
  * 
  * This library assume for use with Arduino core for ESP32.
  * BME280 is a multi-function sensor from BOSCH that can measure temperature, 
@@ -22,6 +22,11 @@
  *   - Original License is BSD [Copyright (c) 2012, Adafruit Industries]
  ******************************************************************************/
 
+#if (ARDUINO >= 100)
+  #include "Arduino.h"
+#else
+  #include "WProgram.h"
+#endif
 #include "BME280_I2C.h"
 
 //==========================================================

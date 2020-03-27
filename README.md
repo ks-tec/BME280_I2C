@@ -147,6 +147,11 @@ https://raspberry-pi.nomad-life.net/1928977/memo/esp32%e3%81%a7%e6%b8%a9%e5%ba%a
   
 ## Change log
 (1.3.1)  
+Fixed bug at BME280_I2C.cpp.  
+  
+BME280_I2C.cpp に存在した不具合を修正しました。  
+  
+(1.3.1)  
 Fixed bug at setSeaLevelPressure() function.  
   
 setSeaLevelPressure() 関数の不具合を修正しました。  

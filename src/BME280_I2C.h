@@ -1,6 +1,6 @@
 /*******************************************************************************
  * BME280_I2C.h
- * ver. 1.4.0
+ * ver. 1.3.2
  * 
  * This library assume for use with Arduino core for ESP32.
  * BME280 is a multi-function sensor from BOSCH that can measure temperature, 
