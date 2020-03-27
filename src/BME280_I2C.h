@@ -31,7 +31,6 @@
 #else
   #include "WProgram.h"
 #endif
-
 #include "Wire.h"
 
 //#define BME280_ADDRESS              0x77      // 1110111 (if SA0 connected to VDDIO)
