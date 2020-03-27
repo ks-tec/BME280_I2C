@@ -146,7 +146,7 @@ https://kazz12211.wordpress.com/2016/03/10/bme280%e6%b8%a9%e6%b9%bf%e5%ba%a6%e3%
 https://raspberry-pi.nomad-life.net/1928977/memo/esp32%e3%81%a7%e6%b8%a9%e5%ba%a6%e3%83%bb%e6%b9%bf%e5%ba%a6%e3%83%bb%e6%b0%97%e5%9c%a7%e3%82%92%e8%a8%88%e6%b8%ac%e3%81%99%e3%82%8b  
   
 ## Change log
-(1.3.1)  
+(1.3.2)  
 Fixed bug at BME280_I2C.cpp.  
   
 BME280_I2C.cpp に存在した不具合を修正しました。  
