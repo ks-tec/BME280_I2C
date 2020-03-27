@@ -22,11 +22,6 @@
  *   - Original License is BSD [Copyright (c) 2012, Adafruit Industries]
  ******************************************************************************/
 
-#if (ARDUINO >= 100)
-  #include "Arduino.h"
-#else
-  #include "WProgram.h"
-#endif
 #include "BME280_I2C.h"
 
 //==========================================================
