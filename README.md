@@ -42,7 +42,7 @@ As follows, an example of how to use this library.
 Following example is used Wemos Lolin32 board which is ESP32 with 128x64 SSD1306 I2C OLED display.  
 With PlatformIO IDE, you can create a configuration file following the wizard. 
   
-下記は WEMOS lolin32 ( 128x64 SSD1306 I2C OLED ディスプレイ搭載の ESP32 ボード ) を使った例です。  
+下記は WEMOS lolin32 ( 128x64 SSD1306 コントローラー I2C 接続 OLED ディスプレイ搭載の ESP32 ボード ) を使った例です。  
 PlatformIO IDE では ウィザードに従って簡単に作成できます。  
   
 #### platform.ini
