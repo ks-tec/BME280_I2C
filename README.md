@@ -45,9 +45,13 @@ Or append library to use if lib_deps section exists.
 lib_deps セクションを追加します。  
 既に lib_deps セクションがあれば そのまま使います。  
   
-##### platform.ini
+#### platform.ini
 Following example is used WEMOS lolin32.  
-With PlatformIO IDE, you can create a configuration file following the wizard.  
+With PlatformIO IDE, you can create a configuration file following the wizard. 
+  
+下記は WEMOS lolin32 を使った例です。  
+PlatformIO IDE を使えばウィザードに従って作成できます。  
+  
 ```ini
 [env:lolin32]
 platform = espressif32
@@ -71,7 +75,7 @@ Write your code like following.
   
 以下のように実装していきます。  
   
-#### your_code.ino
+### your_code.ino
 ```C++
 #include <BME280_I2C.h>
 
