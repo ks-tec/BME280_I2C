@@ -39,10 +39,10 @@ As follows, an example of how to use this library.
 以下に、使い方を例示します。  
   
 ### **Preparing to use BME280_I2C on PlatformIO IDE VScode plugin**
-Following example is used WEMOS lolin32.  
+Following example is used Wemos Lolin32 board which is ESP32 with 128x64 SSD1306 I2C OLED display.  
 With PlatformIO IDE, you can create a configuration file following the wizard. 
   
-下記は WEMOS lolin32 を使った例です。  
+下記は WEMOS lolin32 ( 128x64 SSD1306 I2C OLED ディスプレイ搭載の ESP32 ボード ) を使った例です。  
 PlatformIO IDE では ウィザードに従って簡単に作成できます。  
   
 #### platform.ini
