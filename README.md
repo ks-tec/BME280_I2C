@@ -39,19 +39,13 @@ As follows, an example of how to use this library.
 以下に、使い方を例示します。  
   
 ### **Preparing to use BME280_I2C on PlatformIO IDE VScode plugin**
-Add lib_deps section if it does not exist.  
-Or append library to use if lib_deps section exists.  
-  
-lib_deps セクションを追加します。  
-既に lib_deps セクションがあれば そのまま使います。  
-  
-#### platform.ini
 Following example is used WEMOS lolin32.  
 With PlatformIO IDE, you can create a configuration file following the wizard. 
   
 下記は WEMOS lolin32 を使った例です。  
-PlatformIO IDE を使えばウィザードに従って作成できます。  
+PlatformIO IDE では ウィザードに従って簡単に作成できます。  
   
+#### platform.ini
 ```ini
 [env:lolin32]
 platform = espressif32
