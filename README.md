@@ -69,7 +69,7 @@ Write your code like following.
   
 以下のように実装していきます。  
   
-### your_code.ino
+#### your_code.ino
 ```C++
 #include <BME280_I2C.h>
 
