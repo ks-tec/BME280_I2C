@@ -32,7 +32,7 @@ For use this library, install bellow libraries to your development environment.
 
   "Wire.h" は "BME280_I2C.h" の内部で使用されます。
   ```
-
+  
 ## Example
 As follows, an example of how to use this library.
   
@@ -53,7 +53,7 @@ board = lolin32
 framework = arduino
 lib_deps = Wire, BME280_I2C   # be sure to set additionally
 ```
-
+  
 ### **Preparing to use BME280_I2C on Arduino IDE**
 Get zip archived file from GitHub Repository.  
 And install to Arduino IDE from following menu block.  
