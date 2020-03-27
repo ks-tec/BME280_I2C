@@ -2,7 +2,7 @@
 // BME280_I2C_sample.ino
 //******************************************************************************
 
-#include "BME280_I2C.h"
+#include <BME280_I2C.h>
 
 // define the baud rate for serial communication
 #define SERIAL_BAUD_RATE 115200
