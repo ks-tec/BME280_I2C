@@ -43,19 +43,21 @@ Add lib_deps section if it does not exist.
 Or append library to use if lib_deps section exists.  
   
 ##### platform.ini
+Following example is used WEMOS lolin32.  
+With PlatformIO IDE, you can create a configuration file following the wizard.  
 ```ini
 [env:lolin32]
 platform = espressif32
 board = lolin32
 framework = arduino
-lib_deps = Wire, BME280_I2C
+lib_deps = Wire, BME280_I2C   # be sure to set additionally
 ```
 
 ### **Preparing to use BME280_I2C on Arduino IDE**
 Get zip archived file from GitHub Repository.  
 And install to Arduino IDE from following menu block.  
 ```
-[Sketch] --> [Include library] --> [Add .ZIP Library] --> Choose BME280_I2C-master.zip  
+[Sketch] → [Include library] → [Add .ZIP Library] → Choose BME280_I2C-master.zip
 ```
 ### **How to use BME280_I2C in your code**
 Write your code like following.  
