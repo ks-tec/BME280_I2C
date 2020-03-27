@@ -42,6 +42,9 @@ As follows, an example of how to use this library.
 Add lib_deps section if it does not exist.  
 Or append library to use if lib_deps section exists.  
   
+lib_deps セクションを追加します。  
+既に lib_deps セクションがあれば そのまま使います。  
+  
 ##### platform.ini
 Following example is used WEMOS lolin32.  
 With PlatformIO IDE, you can create a configuration file following the wizard.  
@@ -56,11 +59,17 @@ lib_deps = Wire, BME280_I2C   # be sure to set additionally
 ### **Preparing to use BME280_I2C on Arduino IDE**
 Get zip archived file from GitHub Repository.  
 And install to Arduino IDE from following menu block.  
+  
+GitHub のリポジトリから zip 形式で入手します。  
+そして Arduino IDE の 以下のメニュー項目からインストールします。  
+  
 ```
 [Sketch] → [Include library] → [Add .ZIP Library] → Choose BME280_I2C-master.zip
 ```
 ### **How to use BME280_I2C in your code**
 Write your code like following.  
+  
+以下のように実装していきます。  
   
 #### your_code.ino
 ```C++
