@@ -31,9 +31,9 @@
 #endif
 #include "Wire.h"
 
-#define BME280_ADDRESS_77                   0x77                // 1110111 (if SA0 connected to VDDIO)
-#define BME280_ADDRESS_76                   0x76                // 1110110 (if SA0 connected to GND)
-#define BME280_ADDRESS                      BME280_ADDRESS_76
+#define BME280_ADDRESS_0x77                 0x77                // 1110111 (if SA0 connected to VDDIO)
+#define BME280_ADDRESS_0x76                 0x76                // 1110110 (if SA0 connected to GND)
+#define BME280_ADDRESS                      BME280_ADDRESS_0x76
 #define BME280_ID                           0x60
 
 // define Sea Level Pressure
