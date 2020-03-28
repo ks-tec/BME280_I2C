@@ -147,7 +147,7 @@ class BME280_I2C
     BME280_I2C(byte addr, byte sda, byte scl)
         : _address(addr), _sda(sda), _scl(scl)
     {
-    setSeaLevelPressure(SEALEVELPRESSURE_HPA);
+        setSeaLevelPressure(SEALEVELPRESSURE_HPA);
     }
 
     /**
