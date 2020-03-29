@@ -115,12 +115,16 @@ class BME280_I2C
         BME280_MODE_NORMAL                  = 0x03              // 0x03 = 0b011 = NORMAL
     } BME280Mode;
 
+    //==========================================================
+    // structs
+    //==========================================================
+
     typedef struct bme280data
-    {
-        double temperature;
-        double pressure;
-        double humidity;
-        double altitude;
+    {                                                           // mesured result
+        double temperature;                                     // temperature
+        double pressure;                                        // pressure
+        double humidity;                                        // humidity
+        double altitude;                                        // altitude
     } BME280Data;
 
     //==========================================================
