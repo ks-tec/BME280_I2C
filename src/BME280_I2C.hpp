@@ -48,27 +48,27 @@ class BME280_I2C
     //==========================================================
 
     typedef enum
-    {
-        BME280_REGISTER_CALLIB25            = 0xA1,
+    {                                                           // Register Addresses
+        BME280_REGISTER_CALLIB25            = 0xA1,             // 0xA1 = Calibration Data
 
-        BME280_REGISTER_CHIPID              = 0xD0,
-        BME280_REGISTER_VERSION             = 0xD1,
+        BME280_REGISTER_CHIPID              = 0xD0,             // 0xD0 = Chip ID
+        BME280_REGISTER_VERSION             = 0xD1,             // 0xD1 = Chip Version
 
-        BME280_REGISTER_RESET               = 0xE0,
-        BME280_REGISTER_CALLIB26            = 0xE1,
+        BME280_REGISTER_RESET               = 0xE0,             // 0xE0 = Software Reset
+        BME280_REGISTER_CALLIB26            = 0xE1,             // 0xE1 = Calibration Data
 
-        BME280_REGISTER_CTRL_HUMIDITY       = 0xF2,
-        BME280_REGISTER_STATUS              = 0xF3,
-        BME280_REGISTER_CTRL_MEASURE        = 0xF4,
-        BME280_REGISTER_CONFIG              = 0xF5,
-        BME280_REGISTER_PRESSURE_MSB        = 0xF7,
-        BME280_REGISTER_PRESSURE_LSB        = 0xF8,
-        BME280_REGISTER_PRESSURE_XLSB       = 0xF9,
-        BME280_REGISTER_TEMPERATURE_MSB     = 0xFA,
-        BME280_REGISTER_TEMPERATURE_LSB     = 0xFB,
-        BME280_REGISTER_TEMPERATURE_XLSB    = 0xFC,
-        BME280_REGISTER_HUMIDITY_MSB        = 0xFD,
-        BME280_REGISTER_HUMIDITY_LSB        = 0xFE
+        BME280_REGISTER_CTRL_HUMIDITY       = 0xF2,             // 0xF2 = Control Humidity
+        BME280_REGISTER_STATUS              = 0xF3,             // 0xF3 = Status
+        BME280_REGISTER_CTRL_MEASURE        = 0xF4,             // 0xF4 = Control Mesure
+        BME280_REGISTER_CONFIG              = 0xF5,             // 0xF5 = Config
+        BME280_REGISTER_PRESSURE_MSB        = 0xF7,             // 0xF7 = Pressure MSB
+        BME280_REGISTER_PRESSURE_LSB        = 0xF8,             // 0xF8 = Pressure LSB
+        BME280_REGISTER_PRESSURE_XLSB       = 0xF9,             // 0xF9 = Pressure XLSB
+        BME280_REGISTER_TEMPERATURE_MSB     = 0xFA,             // 0xFA = Temperature MSB
+        BME280_REGISTER_TEMPERATURE_LSB     = 0xFB,             // 0xFB = Temperature LSB
+        BME280_REGISTER_TEMPERATURE_XLSB    = 0xFC,             // 0xFC = Temperature XLSB
+        BME280_REGISTER_HUMIDITY_MSB        = 0xFD,             // 0xFD = Humidity MSB
+        BME280_REGISTER_HUMIDITY_LSB        = 0xFE              // 0xFE = Humidity LSB
     } BME280Register;
 
     typedef enum
@@ -131,6 +131,9 @@ class BME280_I2C
     // variables (public)
     //==========================================================
 
+    /**
+     * measured result data
+     */
     BME280Data data;
 
     //==========================================================
