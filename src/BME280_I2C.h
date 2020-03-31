@@ -27,5 +27,5 @@
 #ifdef __cplusplus
     #include "BME280_I2C.hpp"
 #else
-    #error This library requires a C++ compiler, please change file extension to .cc or .cpp
+    #error This library requires C++ compiler, change file extension to '.cpp'.
 #endif
