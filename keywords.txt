@@ -1,10 +1,10 @@
-#######################################
-# Syntax Coloring Map for library     #
-#######################################
+##################################################
+#        Syntax Coloring Map for library         #
+##################################################
 
-#######################################
+##################################################
 # Class / Datatypes (KEYWORD1)
-#######################################
+##################################################
 BME280_I2C	KEYWORD1
 BME280Register	KEYWORD1
 BME280Standby	KEYWORD1
@@ -14,14 +14,19 @@ BME280Oversampling	KEYWORD1
 BME280Mode	KEYWORD1
 BME280Data	KEYWORD1
 
-#######################################
+##################################################
 # Methods and Functions (KEYWORD2)
-#######################################
+##################################################
+setAddress	KEYWORD2
+setSeaLevelPressure	KEYWORD2
 begin	KEYWORD2
 read	KEYWORD2
 
-#######################################
+##################################################
 # Constants (LITERAL1)
-#######################################
-BME280_ADDRESS	LITERAL1
+##################################################
 BME280_ID	LITERAL1
+BME280_ADDRESS	LITERAL1
+BME280_ADDRESS_0x76	LITERAL1
+BME280_ADDRESS_0x77	LITERAL1
+SEALEVELPRESSURE_HPA	LITERAL1

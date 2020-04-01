@@ -146,6 +146,19 @@ https://kazz12211.wordpress.com/2016/03/10/bme280%e6%b8%a9%e6%b9%bf%e5%ba%a6%e3%
 https://raspberry-pi.nomad-life.net/1928977/memo/esp32%e3%81%a7%e6%b8%a9%e5%ba%a6%e3%83%bb%e6%b9%bf%e5%ba%a6%e3%83%bb%e6%b0%97%e5%9c%a7%e3%82%92%e8%a8%88%e6%b8%ac%e3%81%99%e3%82%8b  
   
 ## Change log
+(1.4.1)  
+Added and edited the keyword file 'keywords.txt'.  
+  
+[ Added ]  
+- setAddress
+- setSeaLevelPressure
+  
+キーワードファイル 'keywords.txt' を追記編集しました。  
+  
+[ 追加 ]  
+- setAddress
+- setSeaLevelPressure
+  
 (1.4.0)  
 The code restructed.  
   
