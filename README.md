@@ -149,15 +149,7 @@ https://raspberry-pi.nomad-life.net/1928977/memo/esp32%e3%81%a7%e6%b8%a9%e5%ba%a
 (1.4.1)  
 Added and edited the keyword file 'keywords.txt'.  
   
-[ Added ]  
-- setAddress
-- setSeaLevelPressure
-  
 キーワードファイル 'keywords.txt' を追記編集しました。  
-  
-[ 追加 ]  
-- setAddress
-- setSeaLevelPressure
   
 (1.4.0)  
 The code restructed.  
